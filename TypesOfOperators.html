@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ol>Types of Operators</ol>
+    <li>Arithemetic operator</li>
+    <li>Assignment Operator</li>
+    <li>Comparison Operator</li>
+    <li>unary operators</li>
+    <li>String operator</li>
+    <li>Bitwise operator</li>
+    <li>logical operator</li>
+    <li>Ternary operator</li>
+
+</body>
+<script>
+    let x=5
+    let y=3
+    console.log(x+y)
+    console.log(x-y)
+    console.log(x*y)
+    console.log(x/y)
+    console.log(x%y) //it gives the reminder
+
+    // assignment operators
+    let a=10
+    let b=5
+    console.log(a,b)
+    a+=b //a=a+b
+    console.log(a)
+    a-=b 
+    console.log(a)
+
+    // comparison operators
+    let p=10
+    let q=5
+
+    let r=12
+    let s='12'
+    console.log(p>q)
+    console.log(p<q)
+    console.log(p>=q)
+    console.log(p<=q)
+    console.log(r==s)
+    console.log(r===s)//strict equality check the equality with data type
+
+    //unary operators
+    let c=5;
+    console.log(c)
+    console.log(++c)
+    console.log(c)
+    console.log(--c)
+    console.log('post increment/decrement operator')
+    let d=7
+    console.log(d)
+    console.log(d++)
+    console.log(d)
+    console.log(d--)
+    console.log(d)
+
+    //bitwise operators
+    let e=5
+    let f=10
+    console.log(e&f)
+    console.log(e|f)
+    console.log(e^f)
+
+    //logical operators
+    let g=true
+    let h=false
+    console.log(g&&h)
+    console.log(g||h)
+
+    //ternary operators
+    let age=10
+    let vote=(age>=18)?'yes you can vote' : 'you cannot vote'
+    console.log(vote)
+
+    let random=prompt(parseInt('Enter the number'))
+    let guess=(random==10)?'your guess is correct':'your guess is incorrect'
+    console.log(guess)
+
+    let name='john'
+    let guess2=(name=='john')?'your guess is correct':'your guess is incorrect'
+    console.log(guess2)
+
+    let flower=prompt('Enter the name')
+    let guess3=(flower=='rose')?'your are correct':'incorrect'
+    console.log(guess3)
+
+    
+
+</script>
+</html>

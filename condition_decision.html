@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h4>Switch Statements</h4>
+    <p></p>
+    
+</body>
+<script>
+    //Switch statement
+    let day="monday";
+    let msg;
+    switch(day.toLowerCase()){
+        case 'monday':
+            msg="first day of the week"
+            break;
+        case "wednesday":
+            msg="third day of the week"
+            break;
+        default:
+            msg="regular day of the week"
+    }
+    console.log(msg)
+
+    //multiple swaitch cases
+    let month="january";
+    let season;
+    switch(month.toLowerCase()){
+        case "january":
+        case "feb":
+        case "march":
+            season="winter season";
+            break;
+        case "april":
+        case "may":
+            season="summer";
+            break;
+        default:
+            season:"Enter valid month"
+        
+    }
+    console.log(season)
+     let percentage=80;
+     let grade;
+     if(percentage>=90){
+        grade='A+'
+     }
+     else if(percentage>=80 && percentage<90){
+        grade="A"
+     }
+     else if(percentage>=70 && percentage<80){
+        grade="B+"
+     }
+     else if(percentage>=60 && percentage<70){
+        grade="B"
+     }
+     else{
+        grade="fail"
+     }
+     switch(grade){
+        case "A+":
+            console.log("your grade is A+");
+            break;
+        case "A":
+            console.log("your grade is A");
+            break;
+        case "B+":
+            console.log("your grade is B+");
+            break;
+        default:
+            console.log("please enter valid percentage")
+            
+     }
+
+
+
+
+</script>
+</html>

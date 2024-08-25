@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Example of functions</h3>
+    <p>Functions in javascript provide organized ,reusable code to perform a set of actions.
+        Functions simpliofy the coding process,prevent reduntant logic,and make code easier to follow
+    </p>
+    <p> Function parameter is a variable listed in the parentheses of a function declaration ,and an argument is the actual value or expression 
+        passed to the function when it is called.
+    </p>
+    <p> A function return statement is used ton specify the value that a function should return when it is called.</p>
+
+    <p>Default parameters in functions allow you to specify default values for parameters in case the caller doesn't provide a value for them</p>
+    
+</body>
+<script>
+    function greet(){
+        console.log('Hello from function')
+    }
+    greet()
+
+    //parameters and arguments
+    
+    function greet1(name){//parameters
+        console.log("my name is "+' '+name)
+    }
+    greet1('virat')//arguments
+
+    function greet2(name,age,address){
+        console.log('my name is'+' '+name+' '+'Age:'+' '+age+' '+"address:"+' '+address)
+    }
+    greet2('sachin','50')
+
+    //return
+    function greet3(name){
+        return 'good morning!'+name;
+    }
+    let a=greet3('joe')
+    console.log('this is a function return',a)
+
+    //Arthematic operation with function
+    function operation(a,b){
+        return a+b;
+
+    }
+    let add=operation(3,4)
+    console.log("Addition is",add)
+
+    //area of circle
+    function circle(radius){
+        return 3.14*radius*radius
+    }
+    let area=circle(3)
+    console.log('area of circle is',area)
+
+    function rectangle(l,b){
+        return l*b
+    }
+    let rec_area=rectangle(2,4)
+    console.log('area of rec is',rec_area)
+
+    //checking if num is even
+
+    function iseven(q){
+        if(q%2==0){
+            return 'even';
+        }
+        else{
+            return 'odd';
+        }
+        
+    }
+    let eve=iseven(5)
+    console.log('given number is',eve)
+
+    function is_even(r){
+        return r%2==0;
+    }
+    console.log(is_even(6))
+
+    //positive ,negative and zero number
+    function pos(w){
+        if(w>0){
+            return 'positive'
+        }
+        else if(w==0){
+            return 'zero'
+        }
+        else{
+            return 'negative'
+        }
+    }
+    console.log(pos(-8))
+
+    //default parameters
+    function greet(name,age=23){
+        return 'welcome '+name+" "+age;
+
+    }
+    let name=greet("john")
+    console.log(name)
+    let name1=greet("harry",45)
+
+
+
+    function addEx(a,b=1,c=2){
+        return a+b+c;
+
+    }
+    let add1=addEx(4)
+    console.log(add1)
+    let add2=addEx(3,4,5)
+    console.log(add2)
+
+
+
+
+</script>
+</html>
