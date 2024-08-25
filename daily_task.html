@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>1.Multiplication table using for loop</h3>
+    <h3>2.Sum of Even Numbers Betweenv 1 and 50 using for loop</h3>
+    <h3>Prime numbers between 0 and 20</h3>
+    
+    
+</body>
+<script>
+    //Multiplication table
+    let mul;
+    for(let i=1;i<=10;i++){
+        mul=5*i;
+        console.log('5'+"x"+i+"="+mul)
+
+    }
+
+    
+    //sum of even numbers
+    let sum=0;
+    for(let k=0;k<=50;k+=2){
+        sum=sum+k; 
+    }
+    console.log("2.sum of even numbers between 0 and 50 is"+" "+sum);
+
+
+    //prime numbers between 2 and 20
+    console.log("3.prime numbers between 0 and 20 are")
+    let j=2;
+    while(j<=20){
+        if(j<=3){
+            console.log(j);
+        }
+        else if(j%2!=0 && j%3!=0){
+            console.log(j)
+        }
+        j++;   
+    }
+    //sum of odd numbers between 0 and 20.
+    let m=1;
+    let oddsum=0;
+    while(m<=20){
+        oddsum+=m;
+        m+=2;
+    }
+    console.log( "4.the sum odd numbers  between 0 and 20 is"+" "+oddsum);
+
+    //factorial of a number
+    
+    let fact=1;
+    let num=9;
+    if(num==0 || num==1){
+        console.log("the factorial is "+" "+1)
+    }
+    let x=1;
+    while(x<=num){
+        fact=fact*x;
+        x++;
+
+    }
+    console.log("6.the factorial of a "+" "+ num +" "+"is :"+fact)
+   
+</script>
+</html>
