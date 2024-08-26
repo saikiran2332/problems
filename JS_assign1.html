@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>1.Fibonacci series</h3>
+    <h3>2.celcius to fahreinheit</h3>
+    <h3>3.Square root of a number</h3>
+    <h3>4.Random number between two numbers</h3>
+    <h3>5.checking palindrome</h3>
+    
+</body>
+<script>
+    //fibonosis series
+    function fibonacci(num){
+        let prev=1;
+        let previ=0;
+        let nextnum=0;
+        console.log(0);
+        console.log(1);
+        for(let i=0;i<num-2;i++){
+            nextnum=prev+previ;
+            previ=prev;
+            prev=nextnum;
+            console.log(nextnum);
+ 
+        }
+
+    }
+    console.log(fibonacci(10))
+    console.log("----------------------------------------")
+
+    //celcius to fareinheit
+    
+    function conversion(temp,deg){
+        
+
+        if(deg=="c"){
+            return (temp*9/5)+32 + "f";
+
+        }
+        return temp;
+
+    }
+    console.log("temperature conversion"+" "+conversion(100,"c"))
+    console.log("--------------------------------------")
+
+
+  //square root of a number
+    function sqrts(no){
+        return Math.sqrt(no);
+    }
+    console.log("the square root of number is "+" " +sqrts(9))
+    console.log("--------------------------------------------")
+
+
+
+
+    //Random numbers between two numbers
+    function random(num1,num2){
+        return Math.random()*(num2-num1)+num1
+    }
+    console.log(random(4,10))
+    console.log("----------------------------")
+
+    //checking palindrome
+    function palindrome(str){
+        str=str.toLowerCase();
+        let len=str.length;
+        for(let g=0;g<len/2;g++ ){
+            if(str[g]!=str[len-g-1]){
+                return "not a palindrome";
+            }
+        }
+        return "is palindrome"
+        
+    }
+    console.log(palindrome("goog"));
+
+
+
+
+</script>
+</html>
