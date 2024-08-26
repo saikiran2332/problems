@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Functions without Parameters</h3>
+    <h3>Functions with Parameters
+    </h3>
+    <h3>
+        Functions with Return Statements
+ 
+    </h3>
+    <h3>Combining Functions
+    </h3>
+    <h3>Default Parameters
+    </h3>
+    
+</body>
+<script>
+    function greet(){
+        console.log("Hello, World!")
+    }
+    greet();
+
+//Functions with parameters
+   function addNumbers(a,b){
+    console.log(a+b);
+   }
+   addNumbers(2,3)
+
+//functions with return statements
+  function multiply(x,y){
+     return x*y;
+  }
+   console.log(multiply(5,10));
+
+  //combining functions
+  function areaRectangle(length,bredth){
+    return multiply(length,bredth);
+  }
+ console.log(areaRectangle(4,8));
+
+  //Default parameters
+  function greetUser(name="guest"){
+    console.log("Hello"+" "+name+"!");
+    
+  }
+  greetUser();
+  
+  //
+</script>
+</html>
